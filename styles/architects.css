@@ -132,6 +132,41 @@ color: #727272;
     color: #727272;
     margin-bottom: 20px;
 }
+
+/* features section related styles */
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    text-align: left;
+    padding-left: 30px;
+}
+.feature-card .feature-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    
+}
+.feature-card{
+   padding-left: 30px;
+   gap: 100px;
+   box-shadow: 5px 5px 5px 5px #f1f0f0;
+   margin-bottom: 90px;
+   border-radius: 8px;
+}
+.features{
+    gap: 100px;
+}
+#experience-badge{
+    padding: 42px;
+    margin-top: -100px;
+    margin-left: -70px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.featured-architect img{
+    width: 100%;
+}
+
 /* some facts related styles */
 .facts-container{
     display: grid;
@@ -180,10 +215,31 @@ color: #727272;
 }
 
 /* responsive media query */
+.food-para{
+   
+    background-color: #FFF4E7;
+    /* border: 1px solid red; */
+    color: #424242;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+   width: 1440px;
+   margin: 0 auto;
+   padding: 50px;
+   border-radius: 10px;
+   
+ 
+ 
+}
+footer{
+margin-top: 130px; 
+/* margin: 0 auto; */
+}
 
 @media screen and (max-width:576px){
     .navbar,
     .nav-links,
+    .features,
     .display-flex
     {
         flex-direction: column;
@@ -206,22 +262,36 @@ color: #727272;
     .facts-container,.teams,.sponsor-companies{
         justify-items: center;
     }
+    #experience-badge{
+       margin-top: 20px;
+       margin-left: 50px;
+    }
+    .food-para{
+        width: 100%;
+    }
+ 
 }
 
 
 @media screen and (min-width:576px) and (max-width:992px) {
 
-    .display-flex{
+    .display-flex,.features{
         flex-direction: column;
        
     }
     .teams{
      margin-left: 50px;
     }
-    .sponsor-companies,.facts-container,.teams{
+    .sponsor-companies,.facts-container,.teams,.features{
         grid-template-columns: repeat(2,1fr);
         gap: 50px;
         justify-items: center;
     }
-  
+    #experience-badge{
+       margin-top: 20px;
+       margin-left: 250px;
+    }
+       .food-para{
+        width: 100%;
+    }
 }
